@@ -1,4 +1,4 @@
-\*\*🔒 Token Bridge
+## 🔒 Token Bridge
 
 ## Description
 
