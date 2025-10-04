@@ -48,4 +48,4 @@ This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.
 - Ethers.js
 - Node.js
 - Primsa ORM
-- PostgreSQL (NeonDB)
+- RPC
