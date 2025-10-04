@@ -1,51 +1,39 @@
-# <h1 align="center"> Forge Template </h1>
+## 🔒 Token Bridge
 
-**Template repository for getting started quickly with Foundry projects**
+## Description
 
-![Github Actions](https://github.com/foundry-rs/forge-template/workflows/CI/badge.svg)
+The Token Bridge project enables seamless cross-chain token transfers between the Avalanche and BNB networks. It consists of smart contracts, an indexer, and a user-friendly frontend application. This bridge allows users to lock tokens on one network and mint equivalent tokens on the other, facilitating interoperability between the two blockchain ecosystems.
 
-## Getting Started
+## Features
 
-Click "Use this template" on [GitHub](https://github.com/foundry-rs/forge-template) to create a new repository with this repo as the initial state.
+- **Cross-Chain Transfers**: Move tokens effortlessly between Avalanche and BNB networks.
+- **Smart Contracts**: Secure and efficient contracts deployed on both networks.
+- **Indexer**: Tracks and manages cross-chain transactions.
+- **User-Friendly Frontend**: React-based interface for easy interaction.
+- **Scalability**: Designed to handle increasing transaction volumes.
+- **Security**: Implements best practices to ensure safe transactions.
+- **Open Source**: Fully open-source for transparency and community contributions.
 
-Or, if your repo already exists, run:
-```sh
-forge init
-forge build
-forge test
-```
+## Project Overview
 
-## Writing your first test
+The Token Bridge project is structured into three main components:
 
-All you need is to `import forge-std/Test.sol` and then inherit it from your test contract. Forge-std's Test contract comes with a pre-instatiated [cheatcodes environment](https://book.getfoundry.sh/cheatcodes/), the `vm`. It also has support for [ds-test](https://book.getfoundry.sh/reference/ds-test.html)-style logs and assertions. Finally, it supports Hardhat's [console.log](https://github.com/brockelmore/forge-std/blob/master/src/console.sol). The logging functionalities require `-vvvv`.
+1. **Smart Contracts**: The BridgeContract.sol handles token 🔒 locking on one network and 🔓 unlocking on the other. Deployed on both Avalanche and BNB networks, these contracts handle the locking and minting of tokens during cross-chain transfers.
 
-```solidity
-pragma solidity 0.8.10;
+2. **Indexer**: A backend service that monitors events on both blockchains, ensuring that transactions are processed correctly and efficiently.
 
-import "forge-std/Test.sol";
+3. **Frontend**: A React-based application that provides users with an intuitive interface to initiate and track their cross-chain token transfers.
 
-contract ContractTest is Test {
-    function testExample() public {
-        vm.roll(100);
-        console.log(1);
-        emit log("hi");
-        assertTrue(true);
-    }
-}
-```
+## Technologies Used:
 
-## Development
+**Blockchain**: Avalanche and BNB
+**Smart Contracts**: Solidity
+**Backend**: Node.js (Indexer)
+**Frontend**: React with wagmi
 
-This project uses [Foundry](https://getfoundry.sh). See the [book](https://book.getfoundry.sh/getting-started/installation.html) for instructions on how to install and use Foundry.
+## Future Enhancements
 
-
-## Tech Stack
-
-- Solidity
-- Foundry
-- TypeScript
-- Express
-- Ethers.js
-- Node.js
-- Primsa ORM
-- RPC
+- Support for additional blockchains.
+- Enhanced security features.
+- Improved user experience on the frontend.
+- Analytics and reporting tools for transaction history.
