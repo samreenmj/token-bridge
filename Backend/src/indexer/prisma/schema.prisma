@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "mongoDB"
+  url      = env("DATABASE_URL")
+}
+
+enum NETWORK {
+  BNB
+  Avalanche
+}
+
+enum BridgeStatus {
+  Pending
+  Completed
+  Failed
+}
+
+model TransactionData {
+  id                 String        @id @default(auto()) @map("_id") @db.ObjectId
+  txHash             String        @unique
+  sourceNetwork      NETWORK
+  destinationNetwork NETWORK
+  tokenAddress       String
+  amount             String
+  sender             String
+  receiver           String
+  nonce              Int
+  isDone             Boolean       @default(false)
+  bridgeStatus       BridgeStatus  @default(Pending)
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+}
