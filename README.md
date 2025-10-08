@@ -26,10 +26,10 @@ The Token Bridge project is structured into three main components:
 
 ## Technologies Used:
 
-**Blockchain**: Avalanche and BNB
-**Smart Contracts**: Solidity
-**Backend**: Node.js (Indexer)
-**Frontend**: React with wagmi
+- **Blockchain**: Avalanche and BNB
+- **Smart Contracts**: Solidity
+- **Backend**: Node.js (Indexer)
+- **Frontend**: React with wagmi
 
 ## Future Enhancements
 
