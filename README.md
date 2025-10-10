@@ -37,3 +37,16 @@ The Token Bridge project is structured into three main components:
 - Enhanced security features.
 - Improved user experience on the frontend.
 - Analytics and reporting tools for transaction history.
+
+
+## Installation
+1. Clone the Repository:
+
+``` git clone https://github.com/samreenmj/token-bridge.git
+    cd token-bridge ```
+
+2.  Install Dependencies:
+
+    - For Backend
+    ``` cd Backend
+        npm install  ```
