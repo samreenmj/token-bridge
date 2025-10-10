@@ -42,11 +42,13 @@ The Token Bridge project is structured into three main components:
 ## Installation
 1. Clone the Repository:
 
-``` git clone https://github.com/samreenmj/token-bridge.git
-    cd token-bridge ```
+    git clone https://github.com/samreenmj/token-bridge.git
+    cd token-bridge
+
 
 2.  Install Dependencies:
 
-    - For Backend
-    ``` cd Backend
-        npm install  ```
+- **For Backend**
+
+    cd Backend
+    npm install
