@@ -50,9 +50,17 @@ The Token Bridge project is structured into three main components:
 
 2.  Install Dependencies:
 
-- **For Backend**
+- **For Indexer**
 
     ```
-    cd Backend
+    cd Indexer
     npm install
     ```
+
+
+## Diagram
+
+``` 
+![alt text](image.png)
+
+```
