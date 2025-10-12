@@ -56,11 +56,3 @@ The Token Bridge project is structured into three main components:
     cd Indexer
     npm install
     ```
-
-
-## Diagram
-
-``` 
-![alt text](image.png)
-
-```
